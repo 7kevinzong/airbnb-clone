@@ -2,7 +2,7 @@
 
 import { BiSearch } from "react-icons/bi";
 
-const Search = () => {
+const Search = (): React.JSX.Element => {
   return (
     <div
       className="

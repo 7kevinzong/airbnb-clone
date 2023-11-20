@@ -5,7 +5,7 @@ interface MenuItemProps {
   label: string;
 }
 
-const MenuItem = ({ onClick, label }: MenuItemProps) => {
+const MenuItem = ({ onClick, label }: MenuItemProps): React.JSX.Element => {
   return (
     <div
       onClick={onClick}

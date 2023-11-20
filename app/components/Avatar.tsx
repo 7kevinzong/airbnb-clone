@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 
-const Avatar = () => {
+const Avatar = (): React.JSX.Element => {
   return (
     <Image
       className="rounded-full"
