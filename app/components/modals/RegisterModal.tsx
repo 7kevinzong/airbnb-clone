@@ -38,7 +38,7 @@ const RegisterModal = (): React.JSX.Element => {
         registerModal.onClose();
       })
       .catch((error) => {
-        toast.error("Something went wrong.");
+        toast.error(`${error.response.data.error}`);
       })
       .finally(() => {
         setIsLoading(false);
