@@ -95,12 +95,11 @@ const LoginModal = (): React.JSX.Element => {
       />
       <div className="text-neutral-500 text-center mt-4 font-light">
         <div className="justify-center flex flex-row items-center gap-2">
-          <div>Already have an account?</div>
           <div
-            onClick={loginModal.onClose}
+            onClick={() => {}}
             className="text-neutral-800 cursor-pointer hover:underline"
           >
-            Log in
+            Forgot your password?
           </div>
         </div>
       </div>
