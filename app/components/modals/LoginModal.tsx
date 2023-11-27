@@ -55,6 +55,11 @@ const LoginModal = (): React.JSX.Element => {
     });
   };
 
+  const toggle = useCallback(() => {
+    loginModal.onClose();
+    registerModal.onOpen();
+  }, [loginModal, registerModal]);
+
   const bodyContent = (
     <div className="flex flex-col gap-4">
       <Heading title="Welcome back" subtitle="Log in to your account!" />
@@ -95,11 +100,12 @@ const LoginModal = (): React.JSX.Element => {
       />
       <div className="text-neutral-500 text-center mt-4 font-light">
         <div className="justify-center flex flex-row items-center gap-2">
+          <div>First time using Airbnb?</div>
           <div
-            onClick={() => {}}
+            onClick={toggle}
             className="text-neutral-800 cursor-pointer hover:underline"
           >
-            Forgot your password?
+            Create an account
           </div>
         </div>
       </div>
