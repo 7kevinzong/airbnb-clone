@@ -60,7 +60,7 @@ const PropertiesClient = ({
       >
         {listings.map((listing) => (
           <ListingCard
-            key={listings.id}
+            key={listing.id}
             data={listing}
             actionId={listing.id}
             onAction={onCancel}
