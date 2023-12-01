@@ -75,6 +75,7 @@ const ListingClient = ({
 
         // Redirect to /trips
         router.push("/trips");
+        router.refresh();
       })
       .catch(() => {
         toast.error("Something went wrong");
