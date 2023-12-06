@@ -87,7 +87,7 @@ const UserMenu = ({ currentUser }: UserMenuProps): React.JSX.Element => {
               </>
             ) : (
               <>
-                <MenuItem onClick={loginModal.onOpen} label="Login" />
+                <MenuItem onClick={loginModal.onOpen} label="Log in" />
                 <MenuItem onClick={registerModal.onOpen} label="Sign up" />
               </>
             )}
