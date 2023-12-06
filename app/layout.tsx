@@ -15,8 +15,8 @@ const font = Nunito({
 });
 
 export const metadata: Metadata = {
-  title: "Airbnb",
-  description: "Airbnb clone",
+  title: "Airbnb Pretty Much",
+  description: "Airbnb Pretty Much is an Airbnb clone made with NextJS.",
 };
 
 export default async function RootLayout({
