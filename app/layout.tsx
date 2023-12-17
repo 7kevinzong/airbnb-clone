@@ -9,6 +9,8 @@ import RegisterModal from "./components/modals/RegisterModal";
 import RentModal from "./components/modals/RentModal";
 import LoginModal from "./components/modals/LoginModal";
 import SearchModal from "./components/modals/SearchModal";
+import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const font = Nunito({
   subsets: ["latin"],
@@ -35,6 +37,8 @@ export default async function RootLayout({
         <RegisterModal />
         <Navbar currentUser={currentUser} />
         <div className="pb-20 pt-28">{children}</div>
+        <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );
