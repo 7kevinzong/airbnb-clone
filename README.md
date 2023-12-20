@@ -17,7 +17,7 @@
 
 - Tailwind animation and effects
 - Full responsiveness
-- Credential & OAuth Identication
+- Credential & OAuth Identification
 - Image upload using Cloudinary CDN
 - Booking / Reservation System
 - Search with filters
